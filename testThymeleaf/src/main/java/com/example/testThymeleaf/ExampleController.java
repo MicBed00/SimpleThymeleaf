@@ -11,6 +11,7 @@ public class ExampleController {
     String getExp(Model model) {
 
         model.addAttribute("some", "This is coming from Controller");
+        model.addAttribute("var1", "Hello World!");
         return "exp";
     }
 }

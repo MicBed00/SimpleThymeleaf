@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:https="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+
+        <style>
+                .button {
+                boarder: none;
+                color:white;
+                padding: 15px 32px;
+                text-align:center;
+                text-drcoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margine: 4px 2px;
+                cursor: pointer;
+            }
+            .button1 {background-color:#4CAF50;}
+            .button2 {background-color:#cc3300;}
+            </style>
     </head>
         <body>
            <h1 th:text="${some}"></h1>
+           <h2 th:text="${var1}"></h2>
 
+           <table cellspacing="1" cellpadding="9" border="2" style="width: 100%">
+               <caption align="center">Plansza</caption>
+               <tbody>
+               <tr bgcolor="#0000FF">
+                   <th>  </th></th><th>C0</th><th>C1</th><th>C2</th>
+               </tr>
+               <tr>
+                  <th bgcolor="#0000FF">R0</th> <td width="30%" valign="top"><p th:text="${some}"></p></td> <td width="30%" valign="top">2</td><td width="30%" valign="top">3</td>
+               </tr>
+               <tr>
+                   <th bgcolor="#0000FF">R1</th> <td>4</td> <td>X</td> <td>6</td>
+               </tr>
+               <tr>
+                   <th bgcolor="#0000FF">R2</th> <td>7</td> <td>8</td> <td>9</td>
+               </tr>
+               </tbody>
+           </table>
+
+           <button class="button button1">Start</button>
+           <button class="button button2">Stop</button>
+<!--           <button onclick="location.href='https://www.google.pl/' type="button">Go to google</button>-->
+            <a href="https://www.google.pl/">
+                <button>Go to google</button>
+            </a>
         </body>
 </html>
