@@ -7,9 +7,9 @@ public class Car {
     public Car() {
     }
 
-    public Car(String model, String mark) {
-        this.model = model;
+    public Car(String mark, String model) {
         this.mark = mark;
+        this.model = model;
     }
 
     public String getModel() {

@@ -47,8 +47,21 @@
            <button class="button button1">Start</button>
            <button class="button button2">Stop</button>
 <!--           <button onclick="location.href='https://www.google.pl/' type="button">Go to google</button>-->
+           <br>
+
             <a href="https://www.google.pl/">
                 <button>Go to google</button>
             </a>
+
+        <br>
+        <br>
+        <tr th:each="car: ${cars}">
+            <td th:text="${car.getMark()}"></td><br>
+            <td th:text="${car.getModel()}"></td><br>
+            <p>#########################</p>
+        </tr>
+
+
+
         </body>
 </html>
